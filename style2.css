@@ -1,0 +1,75 @@
+body {
+    background-color: #808080; 
+    color: #333; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    line-height: 1.7; 
+    padding: 20px; /* Padding for spacing around the content */
+}
+
+h1, h2 {
+    color: #fff; /* White color for headings */
+    text-align: center;
+    margin-bottom: 30px; /* More space below the headings */
+}
+
+span {
+    color: #ffd700;
+}
+
+#demo {
+    display: block;
+    margin: 20px auto; 
+    text-align: center;
+    max-width: 750px;
+    padding: 25px; 
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; /* Slightly rounded corners */
+}
+
+/* Styling for the team names */
+.team-names {
+    color: #555; 
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    margin: 20px auto; 
+    max-width: 700px; 
+    border: 1px solid #ddd; /* Adding a border to match #demo */
+    list-style: none; /* Removing default list styling */
+    text-align: left; 
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;/* x axis */
+    align-items: center;/* y axis */
+    background-color: black;
+    color: white;
+    padding: 0px 100px; /* to move content in container  */
+    border-top: 2px solid yellow;
+    width: 100%;/* to fixed postion of nav bar */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    height: 50px;
+}
+header a {color: white;  
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 18px;/*for font sizing*/
+    transition: ease 1s;
+    }
+    /* transtion */
+header a:hover {
+    color: yellow;
+    font-size: 20px;
+} 
+header span{
+  color: yellow;
+}

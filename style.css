@@ -1,0 +1,159 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color:#e1e3e1;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  }
+  
+  .header {
+    background: #000; /* Black background */
+    color: #ffd700; /* Yellow text */
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 70px;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .navigation {
+    background: #ffd700; /* Yellow background */
+    color: #000000; /* Black text */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  .navigation a {
+    color: #000000; /* Black text */
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .account-details {
+    background: #fff; /* White background */
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #000; /* Black border */
+  }
+  
+  .account-details h2 {
+    color: #000; /* Black text */
+    margin-bottom: 10px;
+  }
+  
+  .account-details p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  .footer {
+    background: #000; /* Black background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 10px 0;
+  }
+  .button-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    background-color: #ffd700; /* Yellow background */
+    color: #000; /* Black text */
+    border: 1px solid #000; /* Black border */
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #fff; /* White background on hover */
+    color: #000; /* Black text on hover */
+  }
+  /* Dark mode styles */
+body.dark-mode {
+    background-color: #333; /* Dark background for dark mode */
+    color: #f1f1f1; /* Light text for dark mode */
+  }
+  
+  body.dark-mode .container {
+    background-color: rgba(0, 0, 0, 0.8); 
+  }
+  
+  body.dark-mode .header,
+  body.dark-mode .footer,
+  body.dark-mode .navigation {
+    background: #222; /* Darker background for header, footer, and navigation */
+  }
+  
+  body.dark-mode .navigation a,
+  body.dark-mode .footer,
+  body.dark-mode .header h1{
+    color: #ffd700; /* Yellow text for contrast */
+  }
+  
+  body.dark-mode .btn {
+    background-color: #444; /* Dark background for buttons */
+    color: #ffd700; /* Yellow text for buttons */
+  }
+  
+  body.dark-mode .btn:hover {
+    background-color: #555; /* Lighter dark background for buttons on hover */
+  }
+
+body.dark-mode .account-details p {
+  color: #000; /* Keeps the text color black in dark mode */
+}
+  
+.header1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;/* x axis */
+  align-items: center;/* y axis */
+  background-color: black;
+  color: white;
+  padding: 0px 100px; /* to move content in container  */
+  border-top: 2px solid yellow;
+  width: 100%;/* to fixed postion of nav bar */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  height: 50px;
+}
+.header1 a {color: white;  
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 18px;/*for font sizing*/
+  transition: ease 1s;
+  }
+  /* transtion */
+.header1 a:hover {
+  color: yellow;
+  font-size: 20px;
+} 
+.header1 span{
+color: yellow;
+}
+  

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cart</title>
+  <link rel="stylesheet" href="cart-new2.css" />
+</head>
+
+<body>
+  <header>
+    <h2><span>AMa</span>zon</h2>
+    <div>
+      <a href="products.html">shop </a>
+      <a href="cart.html">my cart</a>
+      <a href="aboutus.html">about us </a>
+      <a href="contactus.html">contact us </a>
+      <a href="login.html">login</a>
+      <a href="myAccount.html">my account</a>
+      <img
+        src="icons8-dark-mode-16.png"
+        onclick="myFunction()"
+        alt="darkmode"
+      />
+    </div>
+  </header>
+  <div class="small container cart-page">
+    <div class="table-one">
+      <table>
+        <tr>
+          <th>product</th>
+          <th>quantity</th>
+          <th>total</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img
+                src="e0d643e5-05bc-4249-833b-0ddf80440f851689274793057BULLMERMenBeigePrintedV-NeckPocketsT-shirt1.avif"
+                alt="t sirt"
+                style="width: 90px; height: 80px; margin-right: 10px"
+              />
+              <div>
+                <p>oversize T-sirt</p>
+                <a>Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" min="0" /></td>
+          <td>30$</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img
+                src="Apple-Watch-Ultra-2-hero-230912.jpg.og.jpg"
+                alt="t sirt"
+                style="width: 90px; height: 80px; margin-right: 10px"
+              />
+              <div>
+                <p>Apple Watch Ultra 2 hero</p>
+                <a>Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" min="0" /></td>
+          <td>20$</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img
+                src="613z1j7fUML._AC_SL1500_.jpg"
+                alt="t sirt"
+                style="width: 90px; height: 80px; margin-right: 10px"
+              />
+              <div>
+                <p>Cargo Pants for Men Solid Casual</p>
+                <a>Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" min="0" /></td>
+          <td>60$</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="total-price">
+      <table>
+        <tr>
+          <td>subtotal</td>
+          <td>110$</td>
+        </tr>
+        <tr>
+          <td>tax</td>
+          <td>5$</td>
+        </tr>
+        <tr>
+          <td>total</td>
+          <td>115$</td>
+        </tr>
+        <tr style="background-color: rgb(216, 216, 46)">
+          <td
+            colspan="2"
+            onclick="window.location.href ='payment.html';"
+            style="text-align: center; cursor: pointer"
+          >
+            checkout
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+  </script>
+</body>

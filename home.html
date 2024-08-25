@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylhome.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h2><span>AMa</span>zon</h2>
+      <div class="search">
+        <input type="text" placeholder="Search.." />
+        <button type="button">Search</button>
+      </div>
+      <div>
+        <a href="products.html">shop </a>
+        <a href="cart.html">my cart</a>
+        <a href="aboutus.html">about us </a>
+        <a href="contactus.html">contact us </a>
+        <a href="login.html">login</a>
+        <a href="myAccount.html">myAccount</a>
+        <img
+          src="icons/icons8-dark-mode-16.png"
+          onclick="darkmode()"
+          alt="darkmode"
+        />
+      </div>
+    </header>
+
+    <section class="car">
+      <div>
+        <h1>shop with <span>us</span></h1>
+        <p>You need it, you want it, you got it.</p>
+        <a href="products.html">shop now </a>
+      </div>
+    </section>
+
+    <script>
+      function darkmode() {
+        if (isDark) {
+          document.body.style.backgroundColor = "#f2f2f2";
+          document.body.style.color = "black";
+          isDark = false;
+        } else {
+          document.body.style.backgroundColor = "black";
+          document.body.style.color = "white";
+          isDark = true;
+        }
+      }
+
+      function search() {
+        const input = document.querySelector(".search input");
+        const value = input.value;
+        window.location.href = `products.html?search=${value}`;
+      }
+
+      document
+        .querySelector(".search button")
+        .addEventListener("click", search);
+      document
+        .querySelector(".search input")
+        .addEventListener("keypress", function (event) {
+          if (event.key === "Enter") {
+            search();
+          }
+        });
+    </script>
+  </body>
+</html>
